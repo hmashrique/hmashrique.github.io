@@ -1,0 +1,34 @@
+<html> 
+<head> 
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="navbar.js"></script>
+
+<script>
+    // write a function that takes in a string and returns the html content of that string
+    // use the jquery load function to load the html content into the div with the id "output"
+    // https://api.jquery.com/load/
+
+    function loadHTML(book){
+    fetch(book)
+  .then(response=> response.text())
+  .then(text=> document.getElementById('output').innerHTML = text);
+}
+
+</script> 
+
+</head>
+
+<body>
+    
+    </br>
+
+    <div class="container" id="output">   
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <p>Click on the options above to view the worked examples.</p>
+    </div>
+   
+</body>
+
+</html>
