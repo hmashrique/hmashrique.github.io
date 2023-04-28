@@ -12,8 +12,8 @@
     
     </br>
 
-   <div class="container">
-            <h2>Problem Description</h2>
+   <div class="container" style="font-size: 14px">
+            <h3>Problem Description</h3>
             <p>For illustration of the clipping method, lets look at an example. </p>
             <p> We have a dataset named nyc_airbnb.csv , which contains data about price of AirBnb per-night 
             rental houses. In the dataset, there exists some outliers in the price variable. 
@@ -27,7 +27,8 @@
         >
       </lite-youtube>
         </br>
-        <h2>Load the Dataset and View data</h2>
+
+        <h3>Load the Dataset and View data</h3>
 
         <b>The steps are:</b>
         <ul>
@@ -41,6 +42,20 @@
         playlabel="Play: Keynote (Google I/O '18)"
         >
       </lite-youtube>
+        <br>
+        
+        <h3>Check for outliers in price data</h3>
+        <h4>Plot a strip plot for outlier estimation:</h4>
+
+        The steps are:
+
+        import the plotly.express library as px
+        using px, call the strip() method to generate the strip plot
+        inside the method, the parameters will be,
+        nyc: variable where the data is stored
+        price: column data to plot in the y axis
+        store the result into a variable price_strip that will save the plot in this variable
+        display the variable price_strip using the show() method
 
     </div>
 

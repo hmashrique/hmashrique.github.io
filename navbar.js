@@ -36,13 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     : ""
                 }" href="../Outliers_SG.html" role="button">Less Text</a>
               </li>
-              <li class="nav-item navbar-nav navbar-right">
-                <a class="btn btn-primary ${
-                  window.location.href.includes("Outlierstest.html")
+              <li class="nav-item">
+                <a class="btn btn-primary me-md-2 ${
+                  window.location.href.includes("Outliers_SG_Vdo.html")
                     ? "active"
                     : ""
-                }" href="../Outlierstest.html" role="button">Videos</a>
+                }" href="../Outliers_SG_Vdo.html" role="button">Videos</a>
               </li>
+              <li class="nav-item">
+              <a class="btn btn-primary ${
+                window.location.href.includes("Outliers_SG_Vdo2.html")
+                  ? "active"
+                  : ""
+              }" href="../Outliers_SG_Vdo2.html" role="button">Videos(Steps)</a>
+            </li>
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
