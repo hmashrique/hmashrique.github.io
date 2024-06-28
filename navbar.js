@@ -38,17 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
               </li>
               <li class="nav-item">
                 <a class="btn btn-primary me-md-2 ${
-                  window.location.href.includes("Outliers_SG_Vdo.html")
+                  window.location.href.includes("Outliers_SG_Vdo2.html")
                     ? "active"
                     : ""
-                }" href="../Outliers_SG_Vdo.html" role="button">Videos</a>
+                }" href="../Outliers_SG_Vdo2.html" role="button">Videos</a>
               </li>
               <li class="nav-item">
               <a class="btn btn-primary ${
-                window.location.href.includes("Outliers_SG_Vdo2.html")
+                window.location.href.includes("Outliers_SG1.html")
                   ? "active"
                   : ""
-              }" href="../Outliers_SG_Vdo2.html" role="button">Videos(Steps)</a>
+              }" href="../Outliers_SG1.html" role="button">Videos(Steps)</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
