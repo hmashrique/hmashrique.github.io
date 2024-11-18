@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <script src="navbar.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+  </head>
+
+  <body style="padding: 40px">
+    <br />
+    <br />
+
+    <div>
+      <p class="d-inline-flex gap-1">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          What are Outliers?
+        </button>
+      </p>
+      <p>
+        In data science, outliers are values within a dataset that vary greatly
+        from the others, they are either much larger, or significantly smaller.
+        Outliers can appear in a dataset due to variability of measurement,
+        error in data, experimental error etc. Outliers can cause machine
+        learning models to make inaccurate predictions when they are included in
+        the training data, so they need to be handled before training a model.
+      </p>
+
+      <p>One of the best ways to understand outliers is box plots.</p>
+      <p>
+        Boxplots are very useful to see the distribution of a variable/feature
+        and detect outliers in them. It is a useful graphical representation for
+        describing the behavior of the data in the middle as well as both ends
+        of the distribution. A box plot shows the data based on the five-number
+        summary:
+      </p>
+      <ul>
+        <li>
+          <strong>Minimum:</strong> the lowest data point in a variable
+          excluding any outliers
+        </li>
+        <li>
+          <strong>Median (Q2 or 50th percentile):</strong> the middle value in
+          the variable
+        </li>
+        <li>
+          <strong>First quartile (Q1 or 25th percentile):</strong>
+          also known as the lower quartile (0.25)
+        </li>
+        <li>
+          <strong>Third quartile (Q3 or 75th percentile):</strong>
+          also known as the upper quartile (0.75)
+        </li>
+        <li>
+          <strong>Maximum:</strong> the highest data point in the variable
+          excluding any outliers
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="d-inline-flex gap-1">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseiqr"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Interquartile Range
+        </button>
+      </p>
+      <p>
+        The difference between the lower quartile and the upper quartile(Q3 -
+        Q1) is called the
+        <strong>interquartile range</strong> or <strong>IQR</strong>.
+      </p>
+      <p>
+        Boxplots help us find the outliers in the data by using the IQR. As a
+        rule, values that are outside the range of 1.5*IQR from Q1 and Q3 are
+        regarded as outliers. The below image will help us better understand the
+        outliers in our data.
+      </p>
+      <p>
+        <img
+          src="../Boxplot.png"
+          alt="boxplot icon"
+          width="500"
+          height="300"
+          style="margin-right: 10px"
+        />
+      </p>
+      <p>
+        In the image above, the points that are outside the whisker lines are
+        the outliers.
+      </p>
+      <p>
+        There are different techniques to handle outliers in a dataset. In our
+        example, we will use the concept of clipping (winsorizing).
+      </p>
+    </div>
+
+    <div>
+      <p class="d-inline-flex gap-1">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseclipping"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          What is winsorizing/clipping?
+        </button>
+      </p>
+      <p>
+        Clipping data from a dataset means to clip the data at the last
+        permitted extreme value, e.g. the 5th or 95th percentile value. For
+        example, when we clip the data to 95th percentile, values over the 95th
+        percentile will be set to the 95th percentile value meaning all the
+        values greater than 95% percent will equal to the 95th percentile value.
+      </p>
+      <p>The following data set has several (bolded) extremes:</p>
+      <ul>
+        <li>
+          {<strong>0.1, 1,</strong> 12, 14, 16, 18, 19, 21, 24, 26, 29, 32, 33,
+          35, 39, 40, 41, 44, <strong>99, 125</strong>}
+        </li>
+      </ul>
+      <p>
+        After clipping/winsorizing the top and bottom 10% of the data(matching
+        those values to the nearest extreme), we get:
+      </p>
+      <ul>
+        <li>
+          {<strong>12, 12,</strong>12, 14, 16, 18, 19, 21, 24, 26, 29, 32, 33,
+          35, 39, 40, 41, 44, <strong>44, 44</strong>}
+        </li>
+      </ul>
+      <br />
+    </div>
+  </body>
+</html>
