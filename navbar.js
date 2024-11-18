@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href.includes("Outliers_SG1.html")
                   ? "active"
                   : ""
-              }" href="../Outliers_SG1.html" role="button">Videos(Steps)</a>
+              }" href="../Pre-knowledge.html" role="button">Pre-Knowledge</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto">
