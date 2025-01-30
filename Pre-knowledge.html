@@ -92,9 +92,9 @@
       </p>
       <p>
         Boxplots help us find the outliers in the data by using the IQR. As a
-        rule, values that are outside the range of 1.5*IQR from Q1 and Q3 are
-        regarded as outliers. The below image will help us better understand the
-        outliers in our data.
+        rule, values that are outside the range of 1.5*IQR from Q1 and 1.5*IQR
+        from Q3 are regarded as outliers. The below image will help us better
+        understand the outliers in our data.
       </p>
       <p>
         <img
@@ -111,7 +111,7 @@
       </p>
       <p>
         There are different techniques to handle outliers in a dataset. In our
-        example, we will use the concept of clipping (winsorizing).
+        example, we will use the concept of <b>clipping (winsorizing)</b>.
       </p>
     </div>
 
@@ -135,7 +135,10 @@
         percentile will be set to the 95th percentile value meaning all the
         values greater than 95% percent will equal to the 95th percentile value.
       </p>
-      <p>The following data set has several (bolded) extremes:</p>
+      <p>
+        For example, the following data set has several (bolded)
+        extremes/outliers:
+      </p>
       <ul>
         <li>
           {<strong>0.1, 1,</strong> 12, 14, 16, 18, 19, 21, 24, 26, 29, 32, 33,
@@ -153,6 +156,8 @@
         </li>
       </ul>
       <br />
+      We will calculate this lower and upper limit by using the winsorizing
+      method.
     </div>
   </body>
 </html>

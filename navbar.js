@@ -27,15 +27,18 @@ document.addEventListener("DOMContentLoaded", function () {
                   window.location.href.includes("Outliers_WE.html")
                     ? "active"
                     : ""
-                }" href="../Outliers_WE.html" role="button">Full Text</a>
+                }" href="../Outliers_WE.html" role="button">Worked Example</a>
               </li>
+
+            <!--
               <li class="nav-item">
-                <a class="btn btn-primary me-md-2 ${
-                  window.location.href.includes("Outliers_SG.html")
-                    ? "active"
-                    : ""
-                }" href="../Outliers_SG.html" role="button">Less Text</a>
-              </li>
+              <a class="btn btn-primary me-md-2 ${
+                window.location.href.includes("Outliers_SG.html")
+                  ? "active"
+                  : ""
+              }" href="../Outliers_SG.html" role="button">Less Text</a>
+              </li>  
+              
               <li class="nav-item">
                 <a class="btn btn-primary me-md-2 ${
                   window.location.href.includes("Outliers_SG_Vdo2.html")
@@ -43,13 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
                     : ""
                 }" href="../Outliers_SG_Vdo2.html" role="button">Videos</a>
               </li>
+
+             -->
+
               <li class="nav-item">
               <a class="btn btn-primary ${
                 window.location.href.includes("Outliers_SG1.html")
                   ? "active"
                   : ""
               }" href="../Pre-knowledge.html" role="button">Pre-Knowledge</a>
-            </li>
+              </li>
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
